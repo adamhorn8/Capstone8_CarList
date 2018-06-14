@@ -5,39 +5,46 @@
 }
 
 
-<h2>Try Below!</h2>
+<h2>Search for a Fancy Car!</h2>
 
 <br />
 <br />
 
-<form action="Home/GetCarsByMake">
+<form action="Home/GetCarsByMake" class="form-inline">
     <div class="form-group">
-        <label>Make</label>
-        <input type="text" class="form-control" name="make" aria-describedby="emailHelp" placeholder="Please Enter the Day">
+        <input type="text" class="form-control" name="make" aria-describedby="emailHelp" placeholder="Make">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-<form action="Home/GetCarsByModel">
+<br />
+<br />
+
+<form action="Home/GetCarsByModel" class="form-inline">
     <div class="form-group">
-        <label>Model</label>
-        <input type="text" class="form-control" name="model" aria-describedby="emailHelp" placeholder="Please Enter the Day">
+        <input type="text" class="form-control" name="model" aria-describedby="emailHelp" placeholder="Model">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-<form action="Home/GetCarsByYear">
+<br />
+<br />
+
+<form action="Home/GetCarsByYear" class="form-inline">
     <div class="form-group">
-        <label>Year</label>
-        <input type="text" class="form-control" name="year" aria-describedby="emailHelp" placeholder="Please Enter the Day">
+        <input type="text" class="form-control" name="year" aria-describedby="emailHelp" placeholder="Year">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-<form action="Home/GetCarsByColor">
-    <div class="form-group">
-        <label>Color</label>
-        <input type="text" class="form-control" name="color" aria-describedby="emailHelp" placeholder="Please Enter the Day">
+<br />
+<br />
+
+
+<form action="Home/GetCarsByColor" class="form-inline">
+    <div class="form-group mb-2">
+        <input type="text" class="form-control" name="color" aria-describedby="emailHelp" placeholder="Color">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
