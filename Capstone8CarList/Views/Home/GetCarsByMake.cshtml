@@ -1,0 +1,30 @@
+﻿@using Capstone8CarList.Models;
+
+@{
+    ViewBag.Title = "GetCarsByMake";
+}
+
+<h2>GetCarsByMake</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th><a href="~/Home/BookListSorted?column=Title">Title</a></th>
+        <th><a href="~/Home/BookListSorted?column=Author">Author</a></th>
+        <th><a href="~/Home/BookListSorted?column=YearPublished">Year</a></th>
+        <th><a href="~/Home/BookListSorted?column=Status">Status</a></th>
+        <th>Action</th>
+    </tr>
+    @foreach (CarList c in ViewBag.MakeList)
+    {
+        <tr>
+            <td>@c.CarID</td>
+            <td>@c.Make</td>
+            <td>@c.Model</td>
+            <td>@c.Year</td>
+            <td>
+                <a href="~/Home/Add?id=@c.Color"
+                   class="btn btn-primary">Add to Bag</a>
+            </td>
+        </tr>
+    }
+</table>

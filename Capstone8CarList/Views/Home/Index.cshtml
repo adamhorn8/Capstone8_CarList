@@ -1,0 +1,43 @@
+﻿@using Capstone8CarList.Models;
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<h2>Try Below!</h2>
+
+<br />
+<br />
+
+<form action="Home/GetCarsByMake">
+    <div class="form-group">
+        <label>Make</label>
+        <input type="text" class="form-control" name="make" aria-describedby="emailHelp" placeholder="Please Enter the Day">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<form action="Home/GetCarsByModel">
+    <div class="form-group">
+        <label>Model</label>
+        <input type="text" class="form-control" name="model" aria-describedby="emailHelp" placeholder="Please Enter the Day">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<form action="Home/GetCarsByYear">
+    <div class="form-group">
+        <label>Year</label>
+        <input type="text" class="form-control" name="year" aria-describedby="emailHelp" placeholder="Please Enter the Day">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<form action="Home/GetCarsByColor">
+    <div class="form-group">
+        <label>Color</label>
+        <input type="text" class="form-control" name="color" aria-describedby="emailHelp" placeholder="Please Enter the Day">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
